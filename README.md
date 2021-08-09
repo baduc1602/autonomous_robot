@@ -2,6 +2,9 @@
 
 Thanks to turtlebot3 with a huge and helpful library for me to use and in this project I implement the "WAFFLE_PI" model to practice SLAM and NAVIGATION. 
 
+You can see how it works in this [links](https://drive.google.com/file/d/1yCYEjcg8byPkdRy354mxskaTIsZJ0wm7/view?usp=sharing).
+
+## Walkthrough
 Here's a walkthrough of implemented robot features:
 
 <img src='demo.gif' title='Demo project final result'> <br>
