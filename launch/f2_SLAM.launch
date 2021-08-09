@@ -11,7 +11,8 @@
         <!-- Running the robot moving node -->
     <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" 
     type="teleop_twist_keyboard.py" output="screen"/>
-    
+
+        <!-- SLam method to track the map -->
     <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch">
         <arg name="slam_methods" value="gmapping"/>
     </include> 
