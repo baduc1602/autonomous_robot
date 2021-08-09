@@ -4,7 +4,7 @@ Thanks to turtlebot3 with a huge and helpful library for me to use and in this p
 
 Here's a walkthrough of implemented robot features:
 
-<img src='demo.gift' title='Demo project final result'> <br>
+<img src='demo.gif' title='Demo project final result'> <br>
 
 ## Installation
 
