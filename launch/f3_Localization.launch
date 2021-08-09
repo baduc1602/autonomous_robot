@@ -12,11 +12,13 @@
     <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" 
     type="teleop_twist_keyboard.py" output="screen"/>
         <!-- Map_saver package is used to handle map we saved -->
+
    <node name="map_server" pkg="map_server" type="map_server" 
              args="$(find autonomous_robots)/map/map.yaml"/> 
         <!-- apdative monte carlo node running  -->
    <include file="$(find turtlebot3_navigation)/launch/amcl.launch"/>
-        <!-- launhc Rviz with no saved configuration -->
+
+        <!-- launch Rviz with no saved configuration -->
    <node name="rviz" pkg="rviz" type="rviz"/>
    
      <!-- publisher transform for all joint and their inbetween relations -->
