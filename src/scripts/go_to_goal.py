@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # license removed for brevity
 
+
+# Robot auto move from one point to one goal. When it reach the goal, it will stop. 
 import rospy
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
