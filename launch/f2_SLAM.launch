@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+        <!-- gazebo launch with empty world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find autonomous_robots)/world/office.world"/>   
+    </include>
+        <!-- uploading urdf robot model into parameter server -->
+    <param name="robot_description" command="$(find xacro)/xacro 
+    --inorder $(find turtlebot3_description)/urdf/turtlebot3_waffle_pi.urdf.xacro"/>
+    
+        <!-- Running the robot moving node -->
+    <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" 
+    type="teleop_twist_keyboard.py" output="screen"/>
+    
+    <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch">
+        <arg name="slam_methods" value="gmapping"/>
+    </include> 
+</launch>           
