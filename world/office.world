@@ -1115,7 +1115,7 @@
           </surface>
         </collision>
         <visual name='Wall_29_Visual'>
-          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <pose frame=''>0 0 1.250 0 -0 0</pose>
           <geometry>
             <box>
               <size>2.5 0.15 2.5</size>
