@@ -23,7 +23,7 @@
         <param name="publish_frequency" type="double" value="50.0"/>  
     </node>
 
-        <!-- Settings up the MOVEBASE node and costmaps parameter -->
+        <!-- settings up the MOVEBASE node and costmaps parameter -->
      <node name="move_base" pkg="move_base" type="move_base"  output="screen" respawn="false">
         <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
         <rosparam command="load" file="$(find turtlebot3_navigation)/param/costmap_common_params_waffle_pi.yaml" ns="global_costmap"/>
@@ -38,7 +38,7 @@
          
      </node>
 
-     <!-- launhc Rviz with no saved configuration -->
+     <!-- launch Rviz with no saved configuration -->
     
     <node name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navigation.rviz"/>
 </launch>  
