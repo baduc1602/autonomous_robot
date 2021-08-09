@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # license removed for brevity
 
+# Robot auto move to set of sequence goals by itself, when it finished the trajectory, it will stop. In this case, I set 6 goals for it to move. 
+
 import rospy
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
