@@ -2,6 +2,10 @@
 
 Thanks to turtlebot3 with a huge and helpful library for me to use and in this project I implement the "WAFFLE_PI" model to practice SLAM and NAVIGATION. 
 
+Here's a walkthrough of implemented robot features:
+
+<img src='demo.gift' title='Demo project final result'> <br>
+
 ## Installation
 
 - Use Ubuntu 18.04 Melodic version. You can install it through [ROS](http://wiki.ros.org/melodic/Installation/Ubuntu) 
