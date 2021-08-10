@@ -36,3 +36,15 @@ echo "export TURTLEBOT3_MODEL="waffle_pi"">> ~/.bashrc
 - cd ~/catkin_ws && catkin_make
 - git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 ```
+
+## Useage
+
+I have four launch files here, each file contains some nodes to implement the different features.
+
+- **f1_Robot.launch**: to implement the WAFFLE_PI model for the empty world and also display on Rviz. Besides, you can use the keyboard to control the robot. 
+- **f2_SLAM.launch**: Inherit all features of **f1_Robot.launch** and it has the adding function, to track the map of the world I have created on Gazebo.
+- **f3_Localization.launch**: Inherit all features of **f2_SLAM.launch** and this file aims to load map and detect the location of the robot through the AMCL algorithm.
+- **f4_PathPlanning.launch**: Inherit all features of **f3_Localization** 
+
+## License 
+This is a project from Udemy course.Give a big thanks to **Muhammad Luqman** and his useful course. 
